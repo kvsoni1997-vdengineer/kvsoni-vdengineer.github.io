@@ -74,13 +74,14 @@ nav{
 .btn-ghost{background:var(--paper)}
 .btn-ghost:hover{transform:translate(-3px,-3px);box-shadow:var(--shadow)}
 .hero-gear{position:absolute;right:-30px;top:0;width:360px;height:405px;opacity:.95;z-index:-1}
-@media(max-width:900px){
+.hero-gear svg{width:100%;height:100%;display:block}
+@media(max-width:1024px){
   .hero-gear{
     display:block;
-    right:auto;left:50%;top:50%;
+    right:auto;left:50%;top:44%;
     transform:translate(-50%,-50%);
-    width:auto;height:118%;max-height:560px;
-    opacity:.10;
+    width:min(88vw,460px);height:auto;
+    opacity:.22;
   }
 }
 .stats{display:flex;gap:40px;margin-top:50px;flex-wrap:wrap}
